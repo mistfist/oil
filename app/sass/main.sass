@@ -81,6 +81,10 @@ body
 	letter-spacing: 2px
 	text-shadow: 2px 2px #333333
 	text-transform: uppercase
+	.col-md-12
+		h1
+			font-size: 34px
+			padding-bottom: 20px
 	.col-md-4
 		text-transform: none
 		font-size: 18px
@@ -110,19 +114,23 @@ body
 				font-weight: 600
 				color: #333
 				text-decoration: none
+				font-size: 16px
 				&:hover
 					padding-bottom: 5px
 					border-bottom: 4px solid #d4a601
+					opacity: 0.7
 // section-2
 .section-2
-	margin-top: 80px
 	.col-md-2
 		h3
 			padding-top: 20px
-			font-size: 15px
-			font-weight: 600
+			font-size: 16px
+			font-weight: 700
+			padding-bottom: 10px
 	h2
-		margin-bottom: 40px
+		margin-bottom: 20px
+		font-size: 25px
+		margin-top: 50px
 .wrapper-price1,
 .wrapper-price2,
 .wrapper-price3,
@@ -132,6 +140,10 @@ body
 	-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
 	box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
 	position: relative
+	height: 150px
+	background-position: center !important
+	margin: 0 auto
+	max-width: 300px
 	&:hover .item-bg
 		display: block
 	.item-bg
@@ -148,45 +160,56 @@ body
 		.btn-price
 			margin-top: 50px
 			display: block
+			font-size: 14px
 
-
+.form-control
+	font-size: 16px !important
 .wrapper-price1
 	background: url(../img/himiya.jpg) no-repeat
-	height: 150px
 .wrapper-price2
 	background: url(../img/Azotnye-udobreniia.jpg) no-repeat
-	height: 150px
 .wrapper-price3
 	background: url(../img/diesel.jpg) no-repeat
-	height: 150px
 .wrapper-price4
 	background: url(../img/vsp-100.jpg) no-repeat
-	height: 150px
 .wrapper-price5
 	background: url(../img/agrospravka.jpg) no-repeat
-	height: 150px
 .dropdown
 	margin-top: 20px
+	.btn-secondary
+		font-size: 15px
+	.dropdown-item
+		font-size: 14px
 .section-3
 	margin-top: 100px
 	padding-bottom: 50px
 	.btn-secondary
-		padding: 5px 83px
+		font-size: 16px
 	.col-md-3
 		background-color: #ffffff
 		border-radius: 5px
-		height: 370px
+		height: 350px
 		z-index: 2
-		margin-top: 50px
+		margin-top: 100px
+		padding-top: 30px
+		p
+			font-size: 14px
+	h3
+		font-size: 25px
 	
 .section-5
 	background-color: #333
 
 #four
 	h2
-		margin-top: 150px
-		margin-bottom: 150px
-
+		margin-top: 110px
+	.container
+		margin-top: 50px
+		margin-bottom: 80px
+		.col-md-3
+			img
+				border: 1px solid rgba(128, 128, 128, 0.19)
+				margin-top: 20px
 #googlemaps
 	height: 550px
 	width: 100%
@@ -211,11 +234,20 @@ body
 		margin-top: 100px
 		padding-bottom: 20px
 		font-size: 14px
-		
+
+.form-group,
+.has-success,
+.has-feedback
+	max-width: 320px
 
 // menu mobile
 .mobile-menu
 	display: none
+	position: fixed
+	background: #fff
+	z-index: 4
+	width: 100%
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 #menuToggle
 	display: block
 	position: relative
@@ -223,7 +255,7 @@ body
 	z-index: 1
 	-webkit-user-select: none
 	user-select: none
-	top: 4px
+	top: 50px
 	input
 		display: block
 		width: 40px
@@ -255,7 +287,6 @@ body
 		background: #232323
 
 #menu
-	overflow: scroll
 	position: fixed
 	min-width: 320px
 	width: 100%
@@ -270,11 +301,11 @@ body
 	transform: translate(100%, 0)
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-	height: 100%
+	min-height: 800px
 	li
-		padding-top: 2px
+		padding-top: 5px
 		border-bottom: 2px solid #fffefebf
-		padding-bottom: 2px
+		padding-bottom: 5px
 		text-transform: uppercase
 		a
 			color: #165f32 !important
@@ -283,9 +314,9 @@ body
 			border-left: 4px solid #b7b3b6
 			text-decoration: none
 			text-transform: initial
-			font-size: 14px
-		&:hover
-			border-left: 4px solid #165f32
+			font-size: 16px
+			&:hover
+				border-left: 4px solid #165f32
 
 #menuToggle input:checked ~
 	span
