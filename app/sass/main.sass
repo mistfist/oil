@@ -1,0 +1,302 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+// Custom css
+
+// header
+.header-line
+	height: 108px
+	background: #fff
+	box-shadow: 0 4px 11px 0 rgba(0,0,0,.15)
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	text-align: center
+	z-index: 3
+.bg-wrapper
+	background: url(../img/wrapper-bg.jpg) no-repeat
+	height: 700px
+	box-shadow: 0 4px 11px 0 rgba(0,0,0,.15)
+	background-size: cover
+.text-section1
+	padding-top: 250px
+	color: #fff
+	letter-spacing: 2px
+	text-shadow: 2px 2px #333333
+	text-transform: uppercase
+	.col-md-4
+		text-transform: none
+		font-size: 18px
+		border-left: 4px solid #ffc700
+
+.text-wrapper-section1
+	background-color: rgba(51, 51, 51, 0.45)
+	border-radius: 6px
+	padding: 20px
+	margin-left: 15px !important
+	margin-right: 15px !important
+
+.text-last
+	font-size: 16px
+	font-style: italic
+	text-transform: none
+	margin-top: 10px
+	text-align: center
+	
+.nav-menu
+	ul
+		li
+			display: inline-block
+			margin-left: 35px
+			margin-top: 50px
+			a
+				font-weight: 600
+				color: #333
+				text-decoration: none
+				&:hover
+					padding-bottom: 5px
+					border-bottom: 4px solid #d4a601
+// section-2
+.section-2
+	margin-top: 80px
+	.col-md-2
+		h3
+			padding-top: 20px
+			font-size: 15px
+			font-weight: 600
+	h2
+		margin-bottom: 40px
+.wrapper-price1,
+.wrapper-price2,
+.wrapper-price3,
+.wrapper-price4,
+.wrapper-price5
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
+	-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
+	position: relative
+	&:hover .item-bg
+		display: block
+	.item-bg
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0
+		top: 0
+		background: rgba(255,255,255, 0.7)
+		padding: 5px
+		display: none
+		text-align: center
+		font-weight: 700
+		.btn-price
+			margin-top: 50px
+			display: block
+
+
+.wrapper-price1
+	background: url(../img/himiya.jpg) no-repeat
+	height: 150px
+.wrapper-price2
+	background: url(../img/Azotnye-udobreniia.jpg) no-repeat
+	height: 150px
+.wrapper-price3
+	background: url(../img/diesel.jpg) no-repeat
+	height: 150px
+.wrapper-price4
+	background: url(../img/vsp-100.jpg) no-repeat
+	height: 150px
+.wrapper-price5
+	background: url(../img/agrospravka.jpg) no-repeat
+	height: 150px
+.dropdown
+	margin-top: 20px
+.section-3
+	margin-top: 100px
+	padding-bottom: 50px
+	.btn-secondary
+		padding: 5px 83px
+	.col-md-3
+		background-color: #ffffff
+		border-radius: 5px
+		height: 370px
+		z-index: 2
+		margin-top: 50px
+	
+.section-5
+	background-color: #333
+
+#four
+	h2
+		margin-top: 150px
+		margin-bottom: 150px
+
+#googlemaps
+	height: 550px
+	width: 100%
+	position: absolute
+	top: 1200px
+	left: 0
+	z-index: 2
+.section-5
+	.contacts
+		padding-top: 100px
+		font-size: 18px
+		span
+			color: #fff
+		.fa-map-marker-alt,
+		.fa-phone-square,
+		.fa-envelope
+			color: #D4A601
+			margin-right: 5px
+	.copyright
+		color: #ffffff
+		text-align: center
+		margin-top: 100px
+		padding-bottom: 20px
+		font-size: 14px
+		
+
+// menu mobile
+.mobile-menu
+	display: none
+#menuToggle
+	display: block
+	position: relative
+	left: 0px
+	z-index: 1
+	-webkit-user-select: none
+	user-select: none
+	top: 4px
+	input
+		display: block
+		width: 40px
+		height: 32px
+		position: absolute
+		top: -7px
+		cursor: pointer
+		opacity: 0
+		z-index: 2
+		-webkit-touch-callout: none
+	span
+		display: block
+		width: 33px
+		height: 2px
+		margin-bottom: 7px
+		position: relative
+		background: black
+		border-radius: 3px
+		z-index: 1
+		transform-origin: 4px 0px
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease
+		&:first-child
+			transform-origin: 0% 0%
+		&:nth-last-child(2)
+			transform-origin: 0% 100%
+	input:checked ~ span
+		opacity: 1
+		transform: rotate(45deg) translate(-2px, -1px)
+		background: #232323
+
+#menu
+	overflow: scroll
+	position: fixed
+	min-width: 320px
+	width: 100%
+	margin: -128px 0px 0 -215px
+	padding-left: 24px
+	padding-top: 125px
+	padding-right: 135px
+	background-color: #fff
+	list-style-type: none
+	-webkit-font-smoothing: antialiased
+	transform-origin: 0% 0%
+	transform: translate(100%, 0)
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+	height: 100%
+	li
+		padding-top: 2px
+		border-bottom: 2px solid #fffefebf
+		padding-bottom: 2px
+		text-transform: uppercase
+		a
+			color: #165f32 !important
+			font-weight: 600
+			padding-left: 8px
+			border-left: 4px solid #b7b3b6
+			text-decoration: none
+			text-transform: initial
+			font-size: 14px
+		&:hover
+			border-left: 4px solid #165f32
+
+#menuToggle input:checked ~
+	span
+		&:nth-last-child(3)
+			opacity: 0
+			transform: rotate(0deg) scale(0.2, 0.2)
+		&:nth-last-child(2)
+			opacity: 1
+			transform: rotate(-45deg) translate(0, -1px)
+	ul
+		transform: scale(1, 1)
+		opacity: 1
+
+@import "media" // Всегда в конце
