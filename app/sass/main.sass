@@ -60,23 +60,37 @@ body
 // Custom css
 
 // header
+// .header-line
+	// height: 108px
+	// position: fixed
+	// top: 0
+	// left: 0
+	// right: 0
+	// text-align: center
+	// z-index: 3
 .header-line
-	height: 108px
-	background: #fff
-	box-shadow: 0 4px 11px 0 rgba(0,0,0,.15)
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	text-align: center
-	z-index: 3
+	.col-md-2
+		padding: 10px 0px 0px 25px
+		img
+			border: 2px solid rgba(177, 177, 183, 0.7490196078431373)
+			padding: 2px
+
+
+
+
+
+
+// .header-line
+// 	.col-md-2
+// 		img
+// 			border: 1px solid blue
 .bg-wrapper
 	background: url(../img/wrapper-bg.jpg) no-repeat
 	height: 700px
 	box-shadow: 0 4px 11px 0 rgba(0,0,0,.15)
 	background-size: cover
 .text-section1
-	padding-top: 250px
+	padding-top: 100px
 	color: #fff
 	letter-spacing: 2px
 	text-shadow: 2px 2px #333333
@@ -97,13 +111,12 @@ body
 	margin-left: 15px !important
 	margin-right: 15px !important
 
-.text-last
-	font-size: 16px
-	font-style: italic
+.first-last
+	font-size: 19px
 	text-transform: none
-	margin-top: 10px
+	margin-top: 50px
 	text-align: center
-	
+
 .nav-menu
 	ul
 		li
@@ -130,15 +143,12 @@ body
 	h2
 		margin-bottom: 20px
 		font-size: 25px
-		margin-top: 50px
+		margin-top: 70px
 .wrapper-price1,
 .wrapper-price2,
 .wrapper-price3,
 .wrapper-price4,
 .wrapper-price5
-	-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
-	-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
-	box-shadow: 1px 1px 5px 1px rgba(0,0,0,.16)
 	position: relative
 	height: 150px
 	background-position: center !important
@@ -160,7 +170,7 @@ body
 		.btn-price
 			margin-top: 50px
 			display: block
-			font-size: 14px
+			font-size: 15px
 
 .form-control
 	font-size: 16px !important
@@ -203,6 +213,7 @@ body
 #four
 	h2
 		margin-top: 110px
+		font-size: 25px
 	.container
 		margin-top: 50px
 		margin-bottom: 80px
@@ -214,7 +225,7 @@ body
 	height: 550px
 	width: 100%
 	position: absolute
-	top: 1200px
+	top: 1280px
 	left: 0
 	z-index: 2
 .section-5
@@ -239,6 +250,7 @@ body
 .has-success,
 .has-feedback
 	max-width: 320px
+
 
 // menu mobile
 .mobile-menu
@@ -329,5 +341,6 @@ body
 	ul
 		transform: scale(1, 1)
 		opacity: 1
+
 
 @import "media" // Всегда в конце
