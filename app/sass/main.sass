@@ -76,14 +76,6 @@ body
 			padding: 2px
 
 
-
-
-
-
-// .header-line
-// 	.col-md-2
-// 		img
-// 			border: 1px solid blue
 .bg-wrapper
 	background: url(../img/wrapper-bg.jpg) no-repeat
 	height: 700px
@@ -134,6 +126,7 @@ body
 					opacity: 0.7
 // section-2
 .section-2
+	margin-bottom: 100px
 	.col-md-2
 		h3
 			padding-top: 20px
@@ -175,15 +168,21 @@ body
 .form-control
 	font-size: 16px !important
 .wrapper-price1
-	background: url(../img/himiya.jpg) no-repeat
+	background: url(../img/semena.jpg) no-repeat
+	background-size: cover
 .wrapper-price2
 	background: url(../img/Azotnye-udobreniia.jpg) no-repeat
+	background-size: cover
 .wrapper-price3
 	background: url(../img/diesel.jpg) no-repeat
+	background-size: cover
 .wrapper-price4
 	background: url(../img/vsp-100.jpg) no-repeat
+	background-size: contain
+	border: 1px solid rgba(128, 128, 128, 0.14)
 .wrapper-price5
 	background: url(../img/agrospravka.jpg) no-repeat
+	background-size: contain
 .dropdown
 	margin-top: 20px
 	.btn-secondary
@@ -202,6 +201,7 @@ body
 		z-index: 2
 		margin-top: 100px
 		padding-top: 30px
+		max-width: 320px
 		p
 			font-size: 14px
 	h3
@@ -221,13 +221,14 @@ body
 			img
 				border: 1px solid rgba(128, 128, 128, 0.19)
 				margin-top: 20px
-#googlemaps
-	height: 550px
-	width: 100%
-	position: absolute
-	top: 1280px
-	left: 0
-	z-index: 2
+// #googlemaps
+// 	height: 550px
+// 	width: 100%
+// 	overflow: hidden
+// 	position: absolute
+// 	top: 1280px
+// 	left: 0
+// 	z-index: 2
 .section-5
 	.contacts
 		padding-top: 100px
@@ -256,10 +257,17 @@ body
 .mobile-menu
 	display: none
 	position: fixed
-	background: #fff
+	background: rgba(255, 255, 255, 0.7098039215686275)
 	z-index: 4
 	width: 100%
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+	.col-xs-9
+		padding: 10px
+		img
+			border: 2px solid rgba(177, 177, 183, 0.7490196078431373)
+			padding: 5px
+			width: 100px
+
 #menuToggle
 	display: block
 	position: relative
@@ -342,5 +350,42 @@ body
 		transform: scale(1, 1)
 		opacity: 1
 
+// back-to-top
+#back-top
+	position: fixed
+	bottom: 23px
+	right: 24px
+	z-index: 99999
+	display: none
+	a
+		width: 50px
+		height: 50px
+		background-color: #1e9dd9
+		border-radius: 100%
+		display: block
+		font-size: 50px
+		color: #fff
+		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.36)
+		transition: all .25s ease
+		opacity: 0.5
+		&:hover
+			box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.56)
+			text-decoration: none
+			opacity: 1
+		&:focus
+			box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.56)
+			text-decoration: none
+			opacity: 1
+	.fa-angle-up
+		position: relative
+		bottom: 26px
+		font-size: 30px
+		left: 16px
 
+//Goole map 2
+#map
+	height: 550px
+	width: 100%
+	background: grey
+	margin-top: -500px
 @import "media" // Всегда в конце
