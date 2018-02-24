@@ -267,6 +267,14 @@ body
 			border: 2px solid rgba(177, 177, 183, 0.7490196078431373)
 			padding: 5px
 			width: 100px
+	.col-xs-2
+		h3
+			text-align: center
+			font-size: 22px
+			padding: 5px
+			border: 1px solid rgba(128, 128, 128, 0.15)
+			margin-bottom: 20px
+			margin-top: -30px
 
 #menuToggle
 	display: block
@@ -306,9 +314,10 @@ body
 		transform: rotate(45deg) translate(-2px, -1px)
 		background: #232323
 
+
 #menu
 	position: fixed
-	min-width: 320px
+	min-width: 328px
 	width: 100%
 	margin: -128px 0px 0 -215px
 	padding-left: 24px
@@ -322,21 +331,55 @@ body
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 	min-height: 800px
+	.style14
+		border: 0
+		height: 1px
+		background-image: -webkit-linear-gradient(left,#f0f0f0,#5d5d5d,#f0f0f0)
+		background-image: -ms-linear-gradient(left,#f0f0f0,#8c8b8b,#f0f0f0)
+		background-image: -o-linear-gradient(left,#f0f0f0,#8c8b8b,#f0f0f0)
+		margin-bottom: 15px
+		margin-top: 15px
 	li
 		padding-top: 5px
 		border-bottom: 2px solid #fffefebf
-		padding-bottom: 5px
+		padding-bottom: 10px
 		text-transform: uppercase
 		a
-			color: #165f32 !important
+			color: #333
 			font-weight: 600
 			padding-left: 8px
-			border-left: 4px solid #b7b3b6
 			text-decoration: none
 			text-transform: initial
 			font-size: 16px
-			&:hover
-				border-left: 4px solid #165f32
+		a:before
+			font-family: FontAwesome
+			margin-right: 15px
+			font-size: 16px
+			color: #5cb85c
+		&:nth-child(2)
+			a:before
+				content: "\f02d"
+		&:nth-child(3)
+			a:before
+				content: "\f1d8"
+		&:nth-child(4)
+			a:before
+				content: "\f0c0"
+		&:nth-child(5)
+			a:before
+				content: "\f022"
+	.sub-menu
+		padding: 0px
+		li
+			list-style: none
+			padding: 30 0 0 0
+			a
+			a:before
+				content: "\f098"
+				font-family: FontAwesome
+				margin-right: 15px
+				font-size: 16px
+				color: #5cb85c
 
 #menuToggle input:checked ~
 	span
@@ -355,9 +398,10 @@ body
 	position: fixed
 	bottom: 23px
 	right: 24px
-	z-index: 99999
+	z-index: 2
 	display: none
 	a
+		position: relative
 		width: 50px
 		height: 50px
 		background-color: #1e9dd9
@@ -377,10 +421,12 @@ body
 			text-decoration: none
 			opacity: 1
 	.fa-angle-up
-		position: relative
-		bottom: 26px
+		position: absolute
 		font-size: 30px
-		left: 16px
+		margin-top: -15px
+		margin-left: -9px
+		left: 50%
+		top: 50%
 
 //Goole map 2
 #map
